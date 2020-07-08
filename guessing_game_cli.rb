@@ -7,10 +7,10 @@ def run_guessing_game
     guess = gets.chomp
     if guess.to_i == secret_number
       puts "You guessed the correct number!"
-    elsif guess.to_i != secret_number
-      puts "Sorry! The computer guessed #{secret_number}."
     elsif guess == "exit"
       puts "Goodbye!"
+    else
+      puts "Sorry! The computer guessed #{secret_number}."
     end
   end
 end 
