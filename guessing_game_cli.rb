@@ -2,7 +2,7 @@
 def run_guessing_game
   secret_number = rand(1..6)
   guess = 0 
-  while guess != secret_number do
+  #while guess != secret_number do
     puts "Guess the secret number (1-6)." 
     guess = gets.chomp
     if guess.to_i == secret_number
@@ -14,7 +14,7 @@ def run_guessing_game
     else
       puts "Sorry! The computer guessed #{secret_number}."
     end
-  end
+  #end
 end 
 
-run_guessing_game
+#run_guessing_game
